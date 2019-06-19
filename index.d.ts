@@ -35,7 +35,7 @@ export interface Explanation {
 export interface Matchers {
   anything(): any;
   isA(type: Function): any;
-  contains(a: string | any[] | {}): any;
+  contains(...args: (string | any[] | {})[]): any;
   argThat(matcher: Function): any;
   not(v: any): any;
   captor(): Captor
